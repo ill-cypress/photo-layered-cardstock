@@ -2,4 +2,3 @@ interface:
   display_name: "Photo Layered Cardstock"
   short_description: "Unframed photo-based cardstock dioramas"
   default_prompt: "Use $photo-layered-cardstock to rebuild this photo as a clean, unframed stack of separate cardstock depth layers shown from a slight oblique angle."
-
