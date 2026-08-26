@@ -81,4 +81,3 @@ Restore the source framing, subject count, major silhouettes, landmarks, relativ
 ### View is too oblique
 
 Reduce the angle until the photograph's composition reads clearly while at least one side edge, the sheet thicknesses, and the gaps remain visible.
-
