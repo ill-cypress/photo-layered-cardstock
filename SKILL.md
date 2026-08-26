@@ -69,4 +69,3 @@ Inspect the generated image before delivery. Refine or regenerate it if any answ
 7. Is the layer order physically plausible, with no impossible intersections or reversed occlusions?
 
 Present the finished image and briefly name the front-to-back layer order.
-
