@@ -1,4 +1,5 @@
 interface:
-  display_name: "Photo Depth Shadow Box"
-  short_description: "Front-facing illustrated paper shadow boxes"
-  default_prompt: "Use $photo-depth-shadowbox to selectively reinterpret this photo as a front-facing, faceless, hand-illustrated multi-layer paper shadow box."
+  display_name: "Photo Layered Cardstock"
+  short_description: "Unframed photo-based cardstock dioramas"
+  default_prompt: "Use $photo-layered-cardstock to rebuild this photo as a clean, unframed stack of separate cardstock depth layers shown from a slight oblique angle."
+
