@@ -1,85 +1,72 @@
 ---
-name: photo-depth-shadowbox
-description: Selectively reinterpret a photograph as a front-facing, handcrafted 4–6-layer paper shadow box with cartoon-like hand-drawn abstraction, broad matte shapes, faceless people, visible paper edges, and cast shadows. Use for photo-to-image requests that need depth decomposition without literal scene tracing; do not use for generic paper filters, sticker-card layouts, or fabrication-ready cutting templates.
+name: photo-layered-cardstock
+description: Transform a source photograph into a clean, unframed layered-cardstock diorama made from separate paper sheets at distinct depths, shown from a slight oblique angle with visible edges, spacing, and cast shadows. Use for photo-to-image requests that require a recognizable scene rebuilt as a physical stacked-paper sculpture; do not use for framed shadow boxes, flat papercut posters, generic paper-texture filters, or fabrication-ready cutting templates.
 ---
 
-# Photo Depth Shadow Box
+# Photo Layered Cardstock Diorama
 
-Transform the supplied photograph into one finished image whose structure visibly follows:
+Rebuild the supplied photograph as a **layered cardstock diorama composition**. The finished image must show only the freestanding paper construction—never a box, frame, housing, or container.
 
-**DEPTH ANALYSIS → SUBJECT EDITING → LAYER SELECTION → SILHOUETTE → PAPER DIORAMA**
+The governing rule is:
 
-The defining idea is: **Decompose a photograph by visual depth and rebuild it as a handcrafted multi-layer paper shadow box.** Treat the photograph as source memory, not a layout to trace literally.
+**ONE SPATIAL DEPTH PLANE = ONE SEPARATE PHYSICAL CARDSTOCK SHEET**
+
+Multiple elements may share a sheet only when they occupy the same depth plane in the source. Never combine foreground, subject, midground, background, or sky content on one sheet merely to simplify generation.
 
 ## Input and output
 
-- Require a source photograph. If none is available, ask the user to attach one.
-- Use an image-editing/generation tool with the photograph as the source reference; do not recreate the result with code or filters.
-- Produce one polished shadow-box artwork unless the user requests variants or separate planes.
-- Preserve recognizability through one compact **identification anchor**: the main person, landmark, vehicle, object, or distinctive spatial relationship.
+- Require a source photograph. If it is missing or inaccessible, ask the user to attach it.
+- Use an image editing or generation tool with the photograph supplied as the visual reference. Do not simulate the transformation with code, filters, or a text-only description.
 - Preserve the source aspect ratio unless the user requests another format.
+- Produce one polished image unless the user asks for variants or isolated layers.
+- Treat the complete photograph as the composition reference. Preserve the main subject, recognizable scene structure, placement, scale relationships, overlaps, horizon, and major silhouettes.
 
-## Workflow
+## Process
 
-1. Inspect the photograph and identify its emotional center, identification anchor, dominant spatial gesture, foreground, subject plane, background, and any broad quiet field such as sky, water, ground, wall, or road.
-2. **Edit the scene before layering.** Decide what the memory is about, then omit unrelated people, vehicles, signs, clutter, repeated architecture, foliage detail, and other descriptive noise. Do not trace every visible source element.
-3. Select **4–6 physical paper planes**, ordered front to back. Start from `foreground → main subject → middle ground → distant ground → sky/backdrop`, then merge or split only when it improves recognition or overlap.
-4. Recompose the selected content into 3–6 oversized, blunt visual masses with quiet negative space. Mild naive changes in scale, spacing, proportion, or placement are welcome when they strengthen the subject.
-5. Translate each plane into cartoon-like, hand-drawn cut-paper forms: chunky silhouettes, simplified geometry, slightly awkward contours, flat matte colors, and minimal internal detail.
-6. Rebuild the scene as a real paper shadow box viewed **straight on from the front**. Use paper-edge shadows, contact shadows, and narrow layer separation to reveal depth; do not rotate the box to expose its side.
+1. **Identify the subject and depth planes.** Inspect occlusion, scale, overlap, atmospheric distance, and frame position. Find the foreground, main subject, midground, background, and sky or farthest backdrop that actually exist in the photo.
+2. **Group strictly by spatial depth.** Place only elements occupying the same depth on the same plane. If one object visibly spans different depths, split its visible parts across the appropriate planes.
+3. **Convert each depth plane into one separate cardstock sheet.** Simplify photographic detail into clean, broad paper-cut shapes while preserving each plane's decisive contours and content.
+4. **Stack the sheets from front to back.** Keep their order physically correct and use visible air gaps; front sheets must occlude the sheets behind them as the source scene requires.
+5. **Render from a slight oblique angle.** Keep the scene recognizable while clearly exposing sheet thickness, lateral paper edges, staggered silhouettes, and spacing between planes.
+6. **Light the physical construction.** Use coherent contact shadows and soft cast shadows from each sheet onto the sheet behind it to make the depth unmistakable.
 
-Before generation, state one compact line containing both the layer stack and the main omissions, for example: `railing → one couple → fountain → simplified buildings → dusk sky; omit the remaining crowd and cars`. Provide only this user-verifiable plan, not hidden reasoning.
+Before generation, state the inferred front-to-back stack in one compact line, for example: `near foliage → people → building → hills → sky`. Adapt the number of layers to the source; do not force empty or artificial planes.
 
-## Selective abstraction
+## Visual direction
 
-- Make the first read the identification anchor, 3–6 large shapes, and one calm field—not photographic detail.
-- Preserve the anchor through silhouette, signature color, relative placement, and relationship to one or two supporting forms. Exact geometry and complete object inventory are not required.
-- Rebuild the scene from **5–8 broad, low-saturation matte color families** sampled from the source, with no more than one or two stronger accents.
-- Compress vegetation into 1–3 lumpy tonal masses; reduce buildings, terrain, water, and roads to decisive planes; suppress masonry, leaves, windows, grooves, machinery, fabric folds, and repeated linework.
-- Prefer deliberate omission over descriptive completeness. Expand a source-supported sky, water, ground, wall, snow, sand, or road area to create breathing room.
-- Allow a gently naive, editorial, lightly nostalgic mood. The result should feel illustrated by hand before being cut from paper, not mechanically segmented from a photograph.
+- Make the result read as several **thick colored cardstock sheets suspended and stacked in space**, not as one decorated surface.
+- Use matte, opaque cardstock with visible paper thickness, crisp edge definition, restrained paper tooth, and clean handcrafted cut contours.
+- Favor broad shapes and an elegant reduction of detail. Retain details that establish identity; remove fussy texture and micro-detail that do not affect recognition.
+- Derive the palette from the source photograph, simplifying tonal variation into a small set of coherent paper colors.
+- Keep the source composition dominant. The oblique view should reveal depth without turning the scene into a dramatically distorted perspective or an exploded technical diagram.
+- Let gaps and shadows describe the construction. Do not fake depth with printed drop shadows, gradients, translucent photo slices, or several depth bands illustrated on one flat sheet.
 
-## People and crowds
+## Hard constraints
 
-- Remove incidental background people by default. Retain only the smallest number needed for the story, scale, or emotional center—usually zero, one figure, one pair, or at most two compact pairs/groups.
-- In a crowded source, choose representative figures rather than reproducing the crowd. For a fountain scene, for example, keep the fountain and one or two central pairs; omit the surrounding spectators unless a specific group is the subject.
-- Render all people as compact, simplified paper characters or silhouettes with broad pose and clothing-color cues only.
-- **Never draw facial features.** No eyes, pupils, eyebrows, nose, nostrils, mouth, lips, teeth, facial shading, or realistic skin detail, even on the main subject or a large foreground figure. Use a blank face shape, profile block, hair mass, hat, or fully faceless silhouette.
-- Avoid detailed anatomy, fingers, fabric folds, or individualized background portraits.
+- **No box, shadow-box housing, outer frame, border, mat, bezel, rim, window, enclosing wall, container, card outline, or decorative surround.**
+- No flat poster-like papercut illustration.
+- No single-layer composition or shallow embossed relief pretending to be multiple sheets.
+- No straight-on front view that hides thickness and spacing.
+- No sheet containing more than one spatial depth plane.
+- No overly intricate cutwork, tiny decorative fragments, or surface detail that competes with depth layering.
+- No invented objects, deleted primary subjects, arbitrary rearrangement, or major silhouette changes that reduce recognition.
+- No glossy plastic, clay, wood, origami folds, miniature figurines, photographic cutout collage, text, captions, labels, or watermark.
 
-## Non-negotiable visual constraints
+The priority order is: **source recognizability → correct depth separation → visible physical construction → clean paper simplification → decorative finish**.
 
-- Exactly 4–6 visually distinct depth planes.
-- Strict front elevation: camera centered and parallel to the artwork; straight-on composition with no three-quarter turn, visible box side, receding frame edge, or perspective skew.
-- Depth remains legible through narrow physical spacing, exposed cut edges around silhouettes, consistent contact shadows, and soft cast shadows falling onto the planes behind.
-- Bold, slightly rough hand-cut or torn-cut contours with subtle hand-drawn waviness; never smooth vector-perfect paths.
-- Matte fibrous cardstock with opaque gouache, cut-paper, risograph, or screen-print-like color character; subtle uniform paper tooth and slight pigment-density variation are welcome.
-- Flat color relationships rather than photorealistic modeling. Keep near-black sparse and avoid smooth gradients.
-- One coherent handcrafted object with a restrained frontal frame if useful; the frame must not dominate.
+Read [references/visual-spec.md](references/visual-spec.md) when preparing the image-generation instruction or checking a result.
 
-Avoid literal tracing, flat posterization, stacked translucent photo masks, photographic cutout collage, glossy plastic, clay, wood, origami folds, miniature figurines, detailed faces, polished vector art, anime, watercolor blooms, visible marker bands, intricate texture, decorative filler, labels, captions, or watermarks.
+## Quality gate
 
-## Composition decisions
+Inspect the generated image before delivery. Refine or regenerate it if any answer is no:
 
-- Give the identification anchor its own layer whenever this materially improves recognition.
-- Use only source-supported foreground forms such as foliage, railings, rocks, doorways, or street furniture, and simplify them aggressively.
-- Merge adjacent depth regions when their silhouettes compete; split a region only when the extra plane creates a clear overlap or useful spatial cue.
-- When no sky is visible, use the farthest wall, landscape, darkness, or backdrop instead of inventing sky.
-- Preserve culturally or geographically important landmark contours, but reduce secondary structures to supporting masses.
+1. Is the original subject and scene immediately recognizable?
+2. Does every visible sheet represent one and only one spatial depth plane?
+3. Can the viewer clearly see several separate sheets, their thickness, exposed edges, air gaps, and cast shadows?
+4. Is the camera slightly oblique rather than flat front-facing or excessively angled?
+5. Is the construction completely unframed and free of any box or housing?
+6. Are the shapes clean and simplified without losing essential structure?
+7. Is the layer order physically plausible, with no impossible intersections or reversed occlusions?
 
-Read [references/visual-spec.md](references/visual-spec.md) when composing the image-generation instruction, pruning a crowded scene, or resolving an ambiguous layer stack.
+Present the finished image and briefly name the front-to-back layer order.
 
-## Quality check
-
-Inspect the result before delivery. Regenerate or refine it if any of these fail:
-
-- The camera is not squarely front-facing or any side wall of the box is visible.
-- The scene reads first as detailed source transcription rather than a few broad shapes and quiet space.
-- Unrelated people, vehicles, buildings, or foliage remain prominent.
-- Any person has visible facial features.
-- A viewer cannot distinguish 4–6 depth planes through edges and shadows.
-- The identification anchor is no longer recognizable.
-- The result looks photographic, mechanically vectorized, or merely covered with paper texture.
-- Important layers intersect in physically impossible order.
-
-Present the final image and briefly name the identification anchor, retained figures, omissions, and front-to-back layer order.
