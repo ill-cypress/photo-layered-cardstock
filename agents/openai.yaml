@@ -1,0 +1,4 @@
+interface:
+  display_name: "Photo Depth Shadow Box"
+  short_description: "Front-facing illustrated paper shadow boxes"
+  default_prompt: "Use $photo-depth-shadowbox to selectively reinterpret this photo as a front-facing, faceless, hand-illustrated multi-layer paper shadow box."
